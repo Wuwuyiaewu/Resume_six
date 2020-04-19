@@ -1,26 +1,232 @@
 * {
-  outline: 1px solid #000;
+  box-sizing: border-box;
 }
 
 .wrap {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 1920px;
+  margin: 0 auto;
 }
 
 .wrap .self {
-  padding-top: 48px;
+  margin-top: 48px;
   width: 1200px;
   height: 204px;
   border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
-.wrap .self h4 {
+.wrap .self p {
+  margin: 0;
+  padding: 0;
   text-align: left;
-  font-family: 'Andale Mono';
+  font-family: "Andale Mono";
   letter-spacing: 0px;
   font-size: 80px;
-  line-height: 90px;
+  height: 90px;
   color: #000000;
   opacity: 1;
+}
+
+.wrap .profile {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.wrap .profile .img-wrap {
+  width: 324px;
+  height: 324px;
+  text-align: left;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.wrap .profile .img-wrap .photo-img {
+  width: 100%;
+  height: 100%;
+  background: url(../images/photo-large.png) no-repeat top;
+  background-size: contain;
+}
+
+.wrap .profile h4 {
+  width: 100%;
+  font-family: "PingFang TC";
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 45px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #000;
+}
+
+.wrap .profile h4 span {
+  padding-left: 16px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #a00404;
+}
+
+.wrap .profile ul {
+  padding-top: 16px;
+  padding-left: 48px;
+}
+
+.wrap .profile ul li {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "PingFang TC";
+  letter-spacing: 0px;
+  height: 105px;
+}
+
+.wrap .profile ul li:nth-child(1) p:nth-child(1) {
+  position: relative;
+}
+
+.wrap .profile ul li:nth-child(1) p:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -32px;
+  width: 16px;
+  height: 16px;
+  background: #96a9c4 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.wrap .profile ul li:nth-child(2) {
+  margin-top: 24px;
+}
+
+.wrap .education {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin-top: 72px;
+}
+
+.wrap .education h4 {
+  width: 100%;
+  font-family: "PingFang TC";
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 45px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #000;
+}
+
+.wrap .education h4 span {
+  padding-left: 16px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #a00404;
+}
+
+.wrap .education ul {
+  padding-top: 16px;
+  padding-left: 48px;
+}
+
+.wrap .education ul li {
+  font-size: 24px;
+  line-height: 33px;
+  font-family: "PingFang TC";
+  letter-spacing: 0px;
+  height: 36px;
+}
+
+.wrap .education ul li:nth-child(1) p:nth-child(1) {
+  position: relative;
+}
+
+.wrap .education ul li:nth-child(1) p:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -32px;
+  width: 16px;
+  height: 16px;
+  background: #96a9c4 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.wrap .education ul li:nth-child(2) {
+  margin-top: 32px;
+}
+
+.wrap .education ul li:nth-child(2) p:nth-child(1) {
+  position: relative;
+}
+
+.wrap .education ul li:nth-child(2) p:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -32px;
+  width: 16px;
+  height: 16px;
+  background: #96a9c4 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.wrap .skills {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1920px;
+  height: 494px;
+  margin-top: 72px;
+}
+
+.wrap .skills .skills-bg {
+  position: absolute;
+  width: 100%;
+  height: 360px;
+  background: #96a9c4;
+  z-index: -10;
+}
+
+.wrap .skills .skill-content {
+  text-align: center;
+  width: 1200px;
+  height: 100%;
+  background: #415165;
+  color: #fff;
+}
+
+.wrap .skills .skill-content h4 {
+  margin: 0 auto;
+  margin-top: 24px;
+  font-family: "PingFang TC";
+  width: 996px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 45px;
+  padding-bottom: 14px;
+  color: #fff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.wrap .skills .skill-content h4 span {
+  padding-left: 16px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.wrap .skills .skill-content ul {
+  margin: 0 auto;
+  width: 216px;
+  margin-top: 40px;
+  text-align: left;
+  border-left: 1px solid #fff;
+  padding-left: 24px;
 }
 /*# sourceMappingURL=all.css.map */
