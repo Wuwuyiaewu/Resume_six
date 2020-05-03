@@ -166,19 +166,35 @@
     background: #96a9c4;
     z-index: -10;
     .skills-content {
+      margin-top: -72px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       width: 1200px;
-      background: #96a9c4;
+      background: #415165;
+      color: #fff;
       h4 {
         text-align: center;
         width: 100%;
+        margin: 0 102px;
+        padding-top: 24px;
+        padding-bottom: 8px;
+        font-size: 35px;
+        line-height: 45px;
+        border-bottom: 1px solid #fff;
         span {
+          font-size: 24px;
+          line-height: 32px;
         }
       }
       ul {
+        margin-top: 40px;
+        padding-left: 24px;
+        border-left: 1px solid #fff;
         li {
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 100;
         }
       }
     }
